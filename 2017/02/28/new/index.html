@@ -90,9 +90,8 @@
 <meta name="description" content="###分享一下Hexo + GitHub pages搭建个人博客的流程
 
 环境搭建
-
-1.1 安装Node.Js
-1.2 安装Git
+ 1.1 安装Node.Js
+ 1.2 安装Git
 
 GitHub pages">
 <meta property="og:type" content="article">
@@ -102,20 +101,18 @@ GitHub pages">
 <meta property="og:description" content="###分享一下Hexo + GitHub pages搭建个人博客的流程
 
 环境搭建
-
-1.1 安装Node.Js
-1.2 安装Git
+ 1.1 安装Node.Js
+ 1.2 安装Git
 
 GitHub pages">
-<meta property="og:updated_time" content="2017-03-01T04:58:29.693Z">
+<meta property="og:updated_time" content="2017-03-01T05:00:56.351Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="这是一个全新的博客">
 <meta name="twitter:description" content="###分享一下Hexo + GitHub pages搭建个人博客的流程
 
 环境搭建
-
-1.1 安装Node.Js
-1.2 安装Git
+ 1.1 安装Node.Js
+ 1.2 安装Git
 
 GitHub pages">
 
@@ -366,48 +363,49 @@ GitHub pages">
       
         <p>###分享一下Hexo + GitHub pages搭建个人博客的流程</p>
 <ol>
-<li>环境搭建</li>
+<li><p>环境搭建</p>
+<p> 1.1 安装<a href="https://nodejs.org/" target="_blank" rel="external">Node.Js</a></p>
+<p> 1.2 安装<a href="https://git-scm.com/" target="_blank" rel="external">Git</a></p>
+</li>
+<li><p>GitHub pages</p>
+<a id="more"></a>
+<p> 2.1 申请GitHub账号</p>
+<p> 2.2 创建GitHub pages</p>
+<p> 2.3 将代码库clone到本地</p>
+</li>
+<li><p>安装Hexo</p>
+<p> 3.1 cd到刚才clone的代码库目录</p>
+<p> 3.2 安装<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></p>
+<p> 3.3 安装<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题</a></p>
+</li>
+<li><p>修改站点配置文件(<em>NexT主题</em>)</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#启用NexT主题</div><div class="line">theme: next</div></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>1.1 安装<a href="https://nodejs.org/" target="_blank" rel="external">Node.Js</a></p>
-<p>1.2 安装<a href="https://git-scm.com/" target="_blank" rel="external">Git</a></p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#部署到GitHub</div><div class="line"></div><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repository: git@github.com:name/name.github.io.git</div><div class="line">	branch: master</div></pre></td></tr></table></figure>
+</code></pre><ol>
+<li><p>修改主题配置文件</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scheme: Mist</div></pre></td></tr></table></figure>
+</li>
+</ol>
 <ol>
-<li>GitHub pages<a id="more"></a>
-2.1 申请GitHub账号</li>
-</ol>
-<p>2.2 创建GitHub pages</p>
-<p>2.3 将代码库clone到本地</p>
-<ol>
-<li>安装Hexo</li>
-</ol>
-<p>3.1 cd到刚才clone的代码库目录</p>
-<p>3.2 安装<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></p>
-<p>3.3 安装<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题</a></p>
-<ol>
-<li>修改站点配置文件(<em>NexT主题</em>)</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#启用NexT主题</div><div class="line">theme: next</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#部署到GitHub</div><div class="line"></div><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repository: git@github.com:name/name.github.io.git</div><div class="line">	branch: master</div></pre></td></tr></table></figure>
-<ol>
-<li>修改主题配置文件</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scheme: Mist</div></pre></td></tr></table></figure>
-<ol>
-<li>写博客</li>
-</ol>
-<p>source/_posts/xxx.md</p>
+<li><p>写博客</p>
+<p> source/_posts/xxx.md</p>
 <blockquote>
 <hr>
 <p>title: #博客标题<br>date: 2017-03-01 15:39:31 #创建时间<br>categories: #分类</p>
 <h2 id="tags-nodejs-hexo-NexT-多标签"><a href="#tags-nodejs-hexo-NexT-多标签" class="headerlink" title="tags: [nodejs, hexo, NexT] #多标签"></a>tags: [nodejs, hexo, NexT] #多标签</h2><p>文章内容(需要遵循Markdown语法)</p>
 </blockquote>
-<ol>
-<li>生成静态站点文件</li>
+</li>
+<li><p>生成静态站点文件</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
 <ol>
-<li>部署到GitHub</li>
+<li><p>部署到GitHub</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
 <ol>
 <li>绑定域名(可选)</li>
 </ol>
@@ -447,8 +445,8 @@ GitHub pages">
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/01/new/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/01/这是一个全新的博客/" rel="prev" title="这是一个全新的博客">
+                这是一个全新的博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
